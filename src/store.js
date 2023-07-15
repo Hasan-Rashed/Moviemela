@@ -1,15 +1,16 @@
 import { configureStore } from '@reduxjs/toolkit';
-import authReducer from './slices/authSlice';
-import { apiSlice } from './slices/apiSlice';
+import movieReducer from './slices/movieSlice.js'
 
-const store = configureStore({
+
+
+// export const store = configureStore({
+//     reducer: {
+//         movie: movieReducer,
+//     }
+// });
+
+export default configureStore({
     reducer: {
-        // auth is the name of the state or slice and authReducer is the reducer function
-        auth: authReducer,
-        [apiSlice.reducerPath]: apiSlice.reducer
-    },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(apiSlice.middleware),
-    devTools: true
+        movies: movieReducer,
+    }
 });
-
-export default store;
