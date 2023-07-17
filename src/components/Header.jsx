@@ -12,10 +12,10 @@ import {
 
 
 const navigation = [
-{ name: 'Popular', to: '/movies/popular', current: false },
-{ name: 'Top Rated', to: '/movies/rop_rated', current: false },
-{ name: 'Upcoming', to: '/movies/upcoming', current: false },
-{ name: 'Now Playing', to: '/movies/now_playing', current: false },
+{ name: 'Popular', to: '/movies/Popular', current: false },
+{ name: 'Top Rated', to: '/movies/Top Rated', current: false },
+{ name: 'Upcoming', to: '/movies/Upcoming', current: false },
+{ name: 'Now Playing', to: '/movies/Now Playing', current: false },
 ]
 
 function classNames(...classes) {

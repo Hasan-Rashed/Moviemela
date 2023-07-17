@@ -2,11 +2,10 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from 'axios';
 
 
-// Action
+// Action getPopularMovies
 export const getPopularMovies = createAsyncThunk("movies/getPopularMovies", async () => {
-        const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_TMDB_API}&language=en-US&page=1`);
+        const response = await axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${import.meta.env.VITE_TMDB_API}&language=en-US`);
         return response.data.results;
-        // return response.data;
     }
 );
 
@@ -43,36 +42,3 @@ const movieSlice = createSlice({
 
 
 export default movieSlice.reducer;
-
-
-
-
-// export const movieSlice = createSlice({
-//     name: "movie",
-//     initialState: {
-//         pending: null,
-//         error: false
-//     },
-//     reducers: {},
-//     extraReducers: {
-//         [getPopularMovies.pending]: (state, action) => {
-//             state.pending = true;
-//             state.error = false;
-//         },
-        
-//         [getPopularMovies.fulfilled]: (state, action) => {
-//             state.pending = false;
-//             return action.payload;
-//         },
-
-//         [getPopularMovies.rejected]: (state, action) => {
-//             state.pending = false;
-//             state.error = true;
-//         }
-//     }
-
-// });
-
-// export const { setMovies } = movieSlice.actions;
-// export default movieSlice.reducer;
-
