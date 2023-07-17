@@ -30,7 +30,7 @@ return (
         </h2>
 
         <ul className="list">
-            {Array(popularMoviesLength)
+            {Array(20)
             .fill()
             .map((item, index) => (
                 <li className="card" key={index}>
