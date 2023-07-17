@@ -26,6 +26,7 @@ export default withMT({
         'silver': '#ecebff',
         'bubble-gum': '#ff77e9',
         'bermuda': '#78dcca',
+        'imdb_red': '#ff0000',
       },
       fontFamily: { 
         sans: ['Inter var', 'Arial', 'sans-serif'], 

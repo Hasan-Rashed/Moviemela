@@ -25,14 +25,14 @@ return classes.filter(Boolean).join(' ')
 export default function Header() {
 return (
     <div className="container">
-            <Disclosure as="nav" className="bg-black">
+        <Disclosure as="nav" className="bg-black">
         {({ open }) => (
             <>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                     {/* Mobile menu button*/}
-                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white  hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-white  hover:text-imdb_red focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                         <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -57,7 +57,7 @@ return (
                         <a
                             key={item.name}
                             className={classNames(
-                            item.current ? 'bg-black text-white' : 'text-white  hover:text-red-600',
+                            item.current ? 'bg-black text-white' : 'text-white  hover:text-imdb_red',
                             'rounded-md px-3 py-2 text-sm font-medium'
                             )}
                             aria-current={item.current ? 'page' : undefined}
@@ -102,7 +102,7 @@ return (
                         <Menu.Item>
                             {({ active }) => (
                             <a
-                                className={classNames(active ? 'bg-black' : '', 'block px-4 py-2 text-sm text-white hover:text-red-600')}
+                                className={classNames(active ? 'bg-black' : '', 'block px-4 py-2 text-sm text-white hover:text-imdb_red')}
                             >
                                 Your Profile
                             </a>
@@ -111,7 +111,7 @@ return (
                         <Menu.Item>
                             {({ active }) => (
                             <a
-                                className={classNames(active ? 'bg-black' : '', 'block px-4 py-2 text-sm text-white hover:text-red-600')}
+                                className={classNames(active ? 'bg-black' : '', 'block px-4 py-2 text-sm text-white hover:text-imdb_red')}
                             >
                                 Settings
                             </a>
@@ -120,7 +120,7 @@ return (
                         <Menu.Item>
                             {({ active }) => (
                             <a
-                                className={classNames(active ? 'bg-black' : '', 'block px-4 py-2 text-sm text-white hover:text-red-600')}
+                                className={classNames(active ? 'bg-black' : '', 'block px-4 py-2 text-sm text-white hover:text-imdb_red')}
                             >
                                 Sign out
                             </a>
@@ -154,7 +154,7 @@ return (
                     key={item.name}
                     as="a"
                     className={classNames(
-                        item.current ? 'bg-black text-white hover:text-red-600' : 'text-white hover:text-red-600',
+                        item.current ? 'bg-black text-white hover:text-imdb_red' : 'text-white hover:text-imdb_red',
                         'block rounded-md px-3 py-2 text-base font-medium'
                     )}
                     aria-current={item.current ? 'page' : undefined}
