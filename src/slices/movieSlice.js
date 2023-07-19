@@ -20,7 +20,7 @@ const movieSlice = createSlice({
 
     extraReducers: (builder) => {
 
-        builder.addCase(getPopularMovies.pending, (state, action) => {
+        builder.addCase(getPopularMovies.pending, (state) => {
             state.isLoading = true;
             state.error = false;
         });
