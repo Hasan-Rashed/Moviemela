@@ -12,7 +12,6 @@ const dispatch = useDispatch();
 
 // select the top rated movies from the store
 const upcomingMovies = useSelector(state => state.moviesRoot2.upcoming);
-console.log(upcomingMovies)
 
 
 // useEffect to dispatch the getUpcomingMovies action

@@ -5,6 +5,7 @@ import NotFoundScreen from "./screens/NotFoundScreen";
 import PopularScreen from "./screens/PopularScreen";
 import TopRatedScreen from "./screens/TopRatedScreen";
 import UpcomingScreen from "./screens/UpcomingScreen";
+import NowPlayingScreen from "./screens/NowPlayingScreen";
 
 function App() {
   // Disable right click on the page
@@ -29,7 +30,7 @@ function App() {
           <Route path="/movies/popular" element={<PopularScreen />} />
           <Route path="/movies/top_rated" element={<TopRatedScreen />} />
           <Route path="/movies/upcoming" element={<UpcomingScreen />} />
-          {/* <Route path="/movies/now_coming" element={<NowPlaying />} /> */}
+          <Route path="/movies/now_playing" element={<NowPlayingScreen />} />
           <Route path="*" element={<NotFoundScreen />} />
         </Routes>
       </Router>
