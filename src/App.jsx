@@ -28,7 +28,7 @@ function App() {
           {/* /movie:id is a dynamic route */}
           <Route path="/movies/popular" element={<PopularScreen />} />
           <Route path="/movies/top_rated" element={<TopRatedScreen />} />
-          {/* <Route path="/movies/up_coming" element={<UpcomingScreen />} /> */}
+          <Route path="/movies/upcoming" element={<UpcomingScreen />} />
           {/* <Route path="/movies/now_coming" element={<NowPlaying />} /> */}
           <Route path="*" element={<NotFoundScreen />} />
         </Routes>

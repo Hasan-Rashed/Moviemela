@@ -17,7 +17,7 @@ const HomeScreen = () => {
   const dispatch = useDispatch();
 
   // select the movies from the store
-  const popularMovies = useSelector((state) => state.movies);
+  const popularMovies = useSelector((state) => state.moviesRoot.movies);
 
   // useeffect to dispatch the getPopularMovies action
   useEffect(() => {

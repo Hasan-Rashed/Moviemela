@@ -9,7 +9,7 @@ const PopularScreen = () => {
   // const { type } = useParams();
 
   // select the popular movies from the store
-  const popularMovies = useSelector((state) => state.movies);
+  const popularMovies = useSelector((state) => state.moviesRoot.movies);
 
   // useeffect to dispatch the getPopularMovies action
   useEffect(() => {
@@ -19,7 +19,7 @@ const PopularScreen = () => {
   return (
     <>
       <div className="container py-10 px-5 mx-auto items-center justify-center grid grid-cols-1 md:grid-cols-4 gap-3">
-        <h1 className="text-2xl font-bold md:col-span-4 py-5">
+        <h1 className="text-2xl font-bold md:col-span-4">
           Popular Movies
         </h1>
 

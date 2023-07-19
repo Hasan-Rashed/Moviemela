@@ -11,7 +11,8 @@ const UpcomingScreen = () => {
 const dispatch = useDispatch();
 
 // select the top rated movies from the store
-const upcomingMovies = useSelector(state => state.upcoming);
+const upcomingMovies = useSelector(state => state.moviesRoot2.upcoming);
+console.log(upcomingMovies)
 
 
 // useEffect to dispatch the getUpcomingMovies action
@@ -26,7 +27,7 @@ useEffect(() => {
 return (
     <>
         <div className="container py-10 px-5 mx-auto items-center justify-center grid grid-cols-1 md:grid-cols-4 gap-3">
-            <h1 className="text-2xl font-bold md:col-span-4 py-5">Top Rated Movies</h1>
+            <h1 className="text-2xl font-bold md:col-span-4">Upcoming Movies</h1>
 
             {
             

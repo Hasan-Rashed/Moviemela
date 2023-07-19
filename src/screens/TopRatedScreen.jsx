@@ -9,7 +9,7 @@ const TopRatedScreen = () => {
     const dispatch = useDispatch();
 
     // select the top_rated movies from the store
-    const topRatedMovies = useSelector((state) => state.top_rated);
+    const topRatedMovies = useSelector((state) => state.moviesRoot.top_rated);
 
 
     // useeffect to dispatch the getTopRatedMovies action

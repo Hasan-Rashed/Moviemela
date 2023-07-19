@@ -1,12 +1,18 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import movieReducer from './slices/movieSlice.js'
+import getPopularMovies from './slices/movieSlice.js'
 import  getTopRatedMovies  from './slices/topRatedSlice.js';
+import  getUpcomingMovies  from './slices/upcomingSlice.js';
 
 
 
 const rootReducer = combineReducers({
-    movies: movieReducer,
-    top_rated: getTopRatedMovies,
+    moviesRoot: combineReducers({
+        movies: getPopularMovies,
+        top_rated: getTopRatedMovies,
+    }),
+    moviesRoot2: combineReducers({
+        upcoming: getUpcomingMovies
+    }),
 });
 
 
