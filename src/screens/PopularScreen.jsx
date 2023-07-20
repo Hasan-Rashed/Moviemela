@@ -20,7 +20,7 @@ const PopularScreen = () => {
     <>
       <div className="container py-10 px-5 mx-auto items-center justify-center grid grid-cols-1 md:grid-cols-4 gap-3">
         <h1 className="text-2xl font-bold md:col-span-4">
-          Popular Movies
+          POPULAR MOVIES
         </h1>
 
         {popularMovies?.isLoading ? (

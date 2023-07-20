@@ -27,7 +27,7 @@ useEffect(() => {
 return (
     <>
         <div className="container py-10 px-5 mx-auto items-center justify-center grid grid-cols-1 md:grid-cols-4 gap-3">
-            <h1 className="text-2xl font-bold md:col-span-4">Now Playing</h1>
+            <h1 className="text-2xl font-bold md:col-span-4">NOW PLAYING</h1>
 
             {
             

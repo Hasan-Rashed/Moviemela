@@ -6,6 +6,8 @@ import PopularScreen from "./screens/PopularScreen";
 import TopRatedScreen from "./screens/TopRatedScreen";
 import UpcomingScreen from "./screens/UpcomingScreen";
 import NowPlayingScreen from "./screens/NowPlayingScreen";
+import MovieDetails from "./components/MovieDetails";
+import Footer from "./components/Footer";
 
 function App() {
   // Disable right click on the page
@@ -25,14 +27,14 @@ function App() {
         <Header />
         <Routes>
           <Route index path="/" element={<HomeScreen />} />
-          <Route path="/movie/:id" element={<h1>Movie id Screen</h1>} />{" "}
-          {/* /movie:id is a dynamic route */}
+          <Route path="/movie/:id" element={<MovieDetails />} /> {/* /movie:id is a dynamic route */}
           <Route path="/movies/popular" element={<PopularScreen />} />
           <Route path="/movies/top_rated" element={<TopRatedScreen />} />
           <Route path="/movies/upcoming" element={<UpcomingScreen />} />
           <Route path="/movies/now_playing" element={<NowPlayingScreen />} />
           <Route path="*" element={<NotFoundScreen />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );

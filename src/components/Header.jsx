@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import imdb from '../assets/imdbu.png'
+import logo from '../assets/logo.jpg'
 import { Link } from 'react-router-dom';
 
 
@@ -43,12 +43,13 @@ return (
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div className="flex flex-shrink-0 items-center">
-                        <Link to='/'>
-                        <img
+                        <Link to='/'  className="p-2 bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 ...">
+                        {/* <img
                         className="h-8 w-auto"
-                        src={imdb}
+                        src={logo}
                         alt="imdb logo"
-                        />
+                        /> */}
+                        Moviemela
                     </Link>
                     </div>
                     <div className="hidden sm:ml-6 sm:block">
@@ -130,7 +131,7 @@ return (
                     </Transition>
                     </Menu> */}
 
-                    <div className="relative flex w-full gap-2 md:w-max">
+                    {/* <div className="relative flex w-full gap-2 md:w-max">
                         <Input
                             type="search"
                             label="Type here..."
@@ -142,7 +143,7 @@ return (
                         <Button size="sm" className="!absolute right-1 top-1 rounded">
                             Search
                         </Button>
-                        </div>
+                        </div> */}
                                 </div>
                                 </div>
                     </div>
